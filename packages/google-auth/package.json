@@ -1,6 +1,6 @@
 {
   "name": "@qozara/google-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Isomorphic device-local Google OAuth2 session store with expiry validation, incremental scope tracking, legacy credential migration, and optional React 18/19 hooks.",
   "publishConfig": {
     "access": "public"
