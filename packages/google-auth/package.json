@@ -1,0 +1,47 @@
+{
+  "name": "@qozara/google-auth",
+  "version": "1.0.0",
+  "description": "Isomorphic device-local Google OAuth2 session store with expiry validation, incremental scope tracking, legacy credential migration, and optional React 18/19 hooks.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qozara/google-auth.git",
+    "directory": "packages/google-auth"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "@react-oauth/google": ">=0.12.0 <1.0.0",
+    "react": ">=18.0.0 <20.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@react-oauth/google": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "check": "tsc --noEmit -p ../../tsconfig.json"
+  },
+  "license": "MIT"
+}
